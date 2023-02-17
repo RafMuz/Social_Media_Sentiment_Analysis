@@ -1,4 +1,4 @@
-name: Check Social-Media-Sentiment-Analysis Code
+name: Check Code
 
 on: [push]
 
