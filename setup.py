@@ -15,19 +15,20 @@ with open(path.join(HERE, 'README.md'), encoding='utf-8') as f:
 # This call to setup() does all the work
 setup(
     name="Social-Media-Sentiment-Analysis",
-    version="0.1.2",
+    version="0.1.3",
     description="A Library for webscraping social media platforms (twitter) and using sentiment analysis on them!",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     url="https://social_media_sentiment_analysis.readthedocs.io/",
     author="Raf Muz",
     author_email="CyberRaf01@gmail.com",
-    license="GPLv3",
+    license="MIT",
     classifiers=[
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
