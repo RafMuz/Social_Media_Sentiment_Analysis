@@ -15,7 +15,7 @@ with open(path.join(HERE, 'README.md'), encoding='utf-8') as f:
 # This call to setup() does all the work
 setup(
     name="Social-Media-Sentiment-Analysis",
-    version="0.1.4",
+    version="0.1.3",
     description="A Library for webscraping social media platforms (twitter) and using sentiment analysis on them!",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
