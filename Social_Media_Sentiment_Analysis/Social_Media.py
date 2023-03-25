@@ -38,6 +38,7 @@ def get_tweets (keyword: str, operators: str = '', max_tweets: int = None, print
 
     # </editor-fold>         # operators = 'since:2023-01-17 until:2023-01-18 lang:"en"'
 
+    # For every Single Tweet
     for i, tweet in enumerate (twitter.TwitterSearchScraper (keyword + ' ' + operators).get_items ()):
 
         if type (max_tweets) is not type (None):
@@ -53,6 +54,7 @@ def get_tweets (keyword: str, operators: str = '', max_tweets: int = None, print
             print (tweet.rawContent)
             print ('\n')
 
+        # Save Tweet data to 'tweets'
         tweets ['Tweet Time'].append (tweet.date.strftime ('%Y-%m-%d %H:%M:%S'))
         tweets ['Username'].append (tweet.user.username)
         tweets ['Followers Count'].append (tweet.user.followersCount)

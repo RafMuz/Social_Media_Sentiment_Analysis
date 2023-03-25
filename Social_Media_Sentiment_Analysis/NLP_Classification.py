@@ -41,17 +41,18 @@ def classify_tweets (data, print_output: bool = True):
     """
 
     sentimental_analysis = ['Sentimental Score']
-
     classifier = TextClassifier.load ('en-sentiment')
 
+    # For every single tweet
     for tweet_content in data ['Tweet Content'] [0:-1]:
 
         sentence = Sentence (tweet_content)
-        classifier.predict (sentence)
+        classifier.predict (sentence)            # Predicts if it is a Positive or Negative sentence
 
-        # print sentence with predicted labels
-        # if print_output is True: print ('Sentence above is: ', sentence.labels)
+        '''# print sentence with predicted labels
+        # if print_output is True: print ('Sentence above is: ', sentence.labels)'''
 
+        # Add the Positive/Negative Score to the sentimental_analysis list
         for label in sentence.labels:
             if label.value == 'NEGATIVE':
                 sentimental_analysis.append (-label.score)
